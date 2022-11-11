@@ -5,7 +5,7 @@ const cors = require('cors')
 const router = require('./routes');
 app.use(cors())
 
-
+app.use(express.static("dist"));
 
 //app.use('/.netlify/functions/api',router)
 //app.use("/", (req, res) => res.sendFile(path.join(__dirname, "../index.html")));
