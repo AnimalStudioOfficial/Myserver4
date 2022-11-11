@@ -9,6 +9,6 @@ app.use(cors())
 
 app.use('/.netlify/functions/api',router)
 app.use("/", (req, res) => res.sendFile(path.join(__dirname, "../index.html")));
-
+app.use("/oof", (req, res) => res.sendFile(path.join(__dirname, "../index.html")));
 
 module.exports.handler = serverless(app);
